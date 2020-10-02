@@ -1,0 +1,42 @@
+<!-- HTML Forms -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML Forms</h2>
+        <form action="/action_page.php">
+            <label for="Fname">First Name</label><br>
+            <input type="text" id="Fname" name="Fname" value="aya"><br>
+            <label for="Lname">Last Name</label><br>
+            <input type="text" id="Lname" name="Lname" value="alhusamia"><br>
+            <input type="submit" value="Sunmit"><br><!--The Submit Button-->
+            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+ 
+        </form>
+
+        <!--The Radio Buttons-->
+        <h2>Radio Buttons</h2>
+
+            <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            </form> 
+            <!--Checkboxes-->
+            <h2>Checkboxes</h2>
+                <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+                <form action="/action_page.php">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br><br>
+                <input type="submit" value="Submit">
+                </form> 
+
+    </body>
+</html>
