@@ -115,7 +115,7 @@
               <input type="submit" value="Submit">
             </fieldset>
           </form>
-
+          <!--the example on drop down list of browsers by using datalist-->
           <h2>The datalist Element</h2>
           <form action="/action_page.php">
             <input list="browsers" name="browser">
@@ -128,6 +128,30 @@
             </datalist>
             <input type="submit">
           </form>
-
+     <!--************************************************************************-->
+     <!--HTML Form Attributes--> 
+     <h1 style="color: red;">HTML Form Attributes</h1>
+     <h2>Action Attribute and Target Attribute </h2>
+     <!--يعني انه البيانات اللي موجودة بداخل صفحة الفورم رح تنبعث لصفحة معيننة و ينحط فيها لنك الصفحة و اسم الملف  -->
+     <!--The target attribute specifies where to display the response that is received after submitting the form.
+        target attribute can have a values:
+          1- _blank:The response is displayed in a new window or tab.
+          2-_self:The response is displayed in the current window.
+        -->
+     <h2>HTML Form</h2>
+     <form action="/action_page.php" target="_blank" autocomplete="on" method="POST"  novalidate>
+        <label for="Fname">First Name</label><br>
+        <input type="text" id="Fname" name="Fname"><br>
+        <label for="Lname">Last Name</label><br>
+        <input type="text" id="Lname" name="Lname"><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+        If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php"
+    </p>  
+     <p>When submitting this form, the result will be opened in a new browser tab</p>
+      
     </body>
 </html>
