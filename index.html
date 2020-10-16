@@ -1,6 +1,9 @@
 <!-- HTML Forms -->
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
     <body>
         <h1 style="color: red;"> HTML Form </h1>
         <h2>HTML Forms</h2>
@@ -278,6 +281,60 @@
         <label for="appt">Select a time:</label>
         <input type="time" id="appt" name="appt">
       </form>
-      
+      <!--************************************************************************-->
+     <hr>
+     <h1 style="color: red;">HTML Input Attributes</h1>
+     <!--value:specifies an initial value for an input field.-->
+     <h3>value</h3>
+      <form>
+          <label for="Fname">First Name</label><br>
+          <input type="text" id="Fname" name="Fname" value="Aya"><br>
+          <label for="Lname">Last Name</label><br>
+          <input type="text" id="Lname" name="Lname" value="AL-husamia"><br>
+      </form>
+      <!--Readonly:specifies that an input field should be read-only (cannot be changed)-->
+      <h3>Readonly</h3>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Aya" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="AL-husamia"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <!--Disabled:specifies that an input field should be disabled (unusable and un-clickable)-->
+      <H3>Disabled</H3>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Aya" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="alhusamia"><br>
+      </form>
+      <!--size: specifies the width (in characters) of an input field-->
+      <!--The default value for size is 20.-->
+      <h3>Size</h3>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <!--Maxlength:pecifies the maximum number of characters allowed in an input field.-->
+      <h3>Maxlength</h3>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+      </form>
+      <!--************************************************************************-->
+      <hr>
+      <h1 style="color: red;">HTML Heading</h1>
+      <h1>Heading 1</h1><!--the most important heading-->
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6><!--the least important heading-->
     </body>
 </html>
